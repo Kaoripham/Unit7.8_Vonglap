@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Nhietdo;
+    do {
+        c = prompt('Nhap nhiet do hien tai: ')
+        Nhietdo = parseInt(c);
+        if ((Nhietdo < 20 || Nhietdo > 100)) {
+            if (Nhietdo < 20) alert("Hay tang nhiet do!");
+            else alert("Hay giam nhiet do!");
+        }
+
+    } while (Nhietdo < 0 || Nhietdo > 100);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci20</title>
+</head>
+<body>
+
+<script>
+
+    const number = parseInt(prompt('Nhap 1 so nguyen duong: '));
+    let n1 = 0, n2 = 1, nextTerm, Sum, count=3;
+
+    document.write('Fibonacci:');
+    document.write(n1);
+    document.write(n2);
+
+    Sum = n1 + n2;
+    nextTerm = n1 + n2;
+
+
+    while (count <= number) {
+
+        document.write(nextTerm);
+        n1 = n2;
+        n2 = nextTerm;
+        Sum = Sum + nextTerm;
+        nextTerm = n1 + n2;
+
+        count++;
+
+    }
+
+    document.write('  Tong la: ' +Sum);
+
+</script>
+
+</body>
+</html>

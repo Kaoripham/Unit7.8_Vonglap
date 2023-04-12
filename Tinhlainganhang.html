@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const a = parseFloat(prompt("Nhap so tien: "));
+  const r = parseFloat(prompt('Nhap lai suat%: '));
+  const n = parseFloat(prompt('Nhap so thang:'));
+  total = a * (1 + r/100);
+  for (i=1; i<n; i++){
+    total = total * (1 + r/100);
+  }
+      interest = total -a;
+  alert ('Lai suat la:  ' +interest);
+</script>
+</body>
+</html>

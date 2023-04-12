@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Tuoi;
+    do {
+        Tuoi = parseInt(prompt('Nhap tuoi cua ban: '));
+        if ((Tuoi < 0 || Tuoi > 100)) {
+            alert("So tuoi sai, vui long nhap lai");
+        }
+
+    } while (Tuoi < 0 || Tuoi > 100);
+    alert("Ban da nhap:  " + Tuoi);
+
+</script>
+</body>
+</html>
